@@ -46,6 +46,7 @@ const options = {
   arrows: false,      // 隐藏左右切换箭头
   drag: 'free',       // 启用自由拖动模式
   focus: 'center',    // 点击的按钮自动居中
+  speed: 200,
 }
 
 // 点击按钮时的事件处理函数
@@ -63,7 +64,7 @@ onMounted(() => {
 <style>
 /* 外部轮播容器样式，增加padding防止按钮裁切 */
 .splide-container {
-  max-width: 600px;             /* 宽度限制 */
+  max-width: 90vw;             /* 宽度限制 */
   margin: 40px auto;            /* 上下外边距，居中显示 */
   position: relative;           /* 相对定位 */
   padding: 15px 20px;           /* 左右和上下额外padding防止按钮裁切 */
